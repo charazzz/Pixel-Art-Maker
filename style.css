@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body,
+html {
+    font-family: Codystar;
+    height: 100%;
+    color: #fbe8fc;
+}
+
+body {
+    background-image: url("http://coventryrecoverycommunity.org.uk/wp-content/uploads/2016/12/christmas-tree-wallpaper-39.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-print-color-adjust: exact;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    min-width: 1000px;
+}
+
+header {
+    grid-area: 1/1/3/2;
+    min-width: 330px;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+
+/* -------------------HEADINGS & TITLES---------------- */
+
+.h1 {
+    font-size: 70px;
+    color: #fbe8fc;
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+.h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.second-h3 {
+    grid-area: 1/1/2/7;
+    margin-bottom: 10px;
+}
+
+.pen-color-title {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.borders-color-title {
+    grid-area: 1/1/2/4;
+    text-align: center;
+}
+
+.border-del-title {
+    grid-area: 1/1/2/2;
+    text-align: center;
+}
+
+.reset-canv-st-title {
+    margin-top: 0;
+    grid-area: 1/1/2/3;
+    text-align: center;
+}
+
+.single-brd-title {
+    text-align: center;
+}
+
+/* -------------------BTNS---------------- */
+
+button {
+    font-family: 'Fredericka the Great';
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #fbe8fc;
+    -webkit-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+button:active,
+input[type="color"]:active {
+    outline: none;
+    transform: translateY(4px);
+    -webkit-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+    box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+}
+
+button:hover,
+input[type="color"]:hover {
+    background-color: #f9dafb;
+}
+
+#reset,
+#save {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#submit-brdCol-btn {
+    grid-area: 2/2/3/3;
+    height: 25px;
+    width: 40px;
+    margin-left: 5px;
+}
+
+.erase-all-borders-btn {
+    grid-area: 2/1/3/2;
+    height: 25px;
+    width: 40px;
+    text-align: center;
+}
+
+#reset-style-btn {
+    grid-area: 4/1/5/3;
+    height: 25px;
+    width: 40px;
+    margin: 0 45px;
+}
+
+/* -------------------INPUTS---------------- */
+
+input[type="number"] {
+    content: "10";
+    width: 70px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input[type="color"] {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 20px;
+    padding: 1px;
+    -webkit-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 0.6);
+}
+
+input[type="number"]:focus {
+    border: 3px solid #555;
+    outline: none;
+}
+
+#colorChoice {
+    margin-top: 20px;
+}
+
+#colorChoice2 {
+    grid-area: 2/1/3/2;
+    align-self: center;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* -------------------SECTIONS DIVISION---------------- */
+
+.first-section {
+    grid-area: 1/2/2/4;
+    min-width: 440px;
+    padding: 0 20px;
+}
+
+.second-section {
+    grid-area: 2/2/3/4;
+    margin: 20px;
+}
+
+.third-section {
+    grid-area: 3/1/4/4;
+    min-height: 500px;
+    min-width: 400px;
+}
+
+/* -------------------FORMS---------------- */
+
+.form-1 {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.form-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-width: 765px;
+}
+
+.form-2-1 {
+    grid-area: 2/1/3/2;
+    text-align: center;
+    width: 120px;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+    height: 75px;
+}
+
+.form-2-2 {
+    grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 120px;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+    height: 75px;
+}
+
+.form-2-3 {
+    grid-area: 2/4/3/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 120px;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    height: 75px;
+}
+
+.form-2-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 125px;
+    grid-area: 2/6/3/7;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    height: 75px;
+}
+
+.single-border {
+    grid-area: 2/3/3/4;
+    width: 120px;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    height: 75px;
+}
+
+
+/* -------------HORIZONTAL RULE------------------ */
+
+hr {
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 10px 3px #fbe8fc;
+}
+
+hr:after {
+    content: "\00a0";
+}
+
+/* -------------------ERASER--------------------- */
+
+.eraser {
+    grid-area: 2/5/3/6;
+    border: 2px dotted #fbe8fc;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 95px;
+    width: 120px;
+
+}
+
+.eraser-title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.eraser-checkbox {
+    margin-left: 54px;
+    margin-top: 21px;
+}
+
+input[type="checkbox"]:before {
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #808080;
+    content: "";
+    background: #FFF;
+}
+
+input[type="checkbox"]:after {
+    position: relative;
+    display: block;
+    left: 2px;
+    top: -15px;
+    width: 11px;
+    height: 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B3B3B3 #dcddde #dcddde #B3B3B3;
+    content: "";
+    background-image: linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"]:checked:after {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC'), linear-gradient(135deg, #B1B6BE 0%, #FFF 100%);
+}
+
+/* -------------------RESULTS DIV---------------- */
+
+.result-wrapper {
+    text-align: center;
+    min-height: 100px;
+}
+
+#result {
+    color: #d9ab70;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* -------------------TABLE---------------- */
+
+#myGrid {
+    border-collapse: collapse;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 1px 3px 63px 21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 63px 21px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 63px 21px rgba(0, 0, 0, 0.75);
+}
+
+#myTd {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/* -------------------ICONS---------------- */
+
+.material-icons {
+    margin: 11px;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
+.material-icons:active {
+    transform: translateY(4px);
+    -webkit-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+    box-shadow: 7px 7px 32px 6px rgba(0, 0, 0, 1);
+}
+
+.material-icons:selected {
+    transform: translateY(4px);
+}
+
+.icons {
+    text-align: center;
+}
+
+/* -------------------FOOTER---------------- */
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 1200px;
+}
+
+/* -------------------TIPTEXTS---------------- */
+
+.form-2-3 .border-eraser-tiptext {
+    font-family: 'Fredericka the Great';
+    text-align: center;
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 92px;
+    margin-left: -20px;
+}
+
+.form-2-3:hover .border-eraser-tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.eraser .erasertiptext {
+    font-family: 'Fredericka the Great';
+    text-align: center;
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-top: 16px;
+    margin-left: -20px;
+}
+
+.eraser:hover .erasertiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.single-border .single-brd-ersr-tiptext {
+    font-family: 'Fredericka the Great';
+    text-align: center;
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: -20px;
+}
+
+.single-border:hover .single-brd-ersr-tiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.recent-colors-1,
+.recent-colors-2 {
+    text-align: center;
+
+}
+
+.r-c-title {
+    font-family: 'Fredericka the Great';
+    text-align: center;
+}
+
+.r-c {
+    width: 25px;
+    height: 25px;
+    margin: 7px;
+    border: 1px solid #fff;
+    display: inline-flex;
+}
+
+.form-2-1 .recent-color-list {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: -20px;
+    margin-top: 11px;
+}
+
+.form-2-1:hover .recent-color-list {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-2-2 .recent-color-list {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s;
+    margin-left: -20px;
+    margin-top: 93px;
+}
+
+.form-2-2:hover .recent-color-list {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* -------------------JS CLASSES---------------- */
+
+.hidden {
+    visibility: hidden;
+}
+
+.right-border {
+    border-right: 1px solid #360441;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #360441;
+}
+
+/* -------------------@PRINT---------------- */
+
+@media print {
+    body,
+    h1 {
+        color: #360441 !important;
+    }
+
+    hr {
+        box-shadow: 0 0 10px 3px #360441 !important;
+
+    }
+    
+    .footer {
+        color: #fbe8fc;
+    }
+}
