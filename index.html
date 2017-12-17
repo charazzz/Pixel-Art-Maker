@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Pixel Art Maker</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="h1">Pixel Art Maker</h1>
+        </header>
+        <section class="first-section">
+            <form class="form-1">
+                <h3 class="h3 first-h3">Choose the Height and the Width of the Canvas!</h3>
+                <div class="inputs">
+                    <lable id='gridHeight' for='nameField'>Grid Height:</lable>
+                    <input id="gridheight" type="number" min="0" max="35" value="15">
+                    <lable id='gridWidth' for='nameField'>Grid Width:</lable>
+                    <input id="gridwidth" type="number" min="0" max="40" value="30">
+                    <button id="submit" type="submit">Submit!</button>
+                </div>
+                <div class="result-wrapper hidden">
+                    <p id="result"></p>
+                    <button id="reset" type="reset">Delete Canvas!</button>
+                    <button id="save" type="reset">Save Canvas!</button>
+                </div>
+            </form>
+            <hr>
+        </section>
+        <section class="second-section">
+            <div class="form-2">
+                <h3 class="h3 second-h3">Style Menu</h3>
+                <form class="form-2-1">
+                    <p class="pen-color-title">Pen Color</p>
+                    <input type="color" id="colorChoice" value="#f6caf9">
+                    <div class="recent-color-list">
+                        <div class="r-c-title">Recent Color List</div>
+                        <div class="recent-colors-1"></div>
+                    </div>
+                </form>
+                <form class="form-2-2">
+                    <p class="borders-color-title">Border Color</p>
+                    <input type="color" id="colorChoice2" value="#360441">
+                    <button type="submit" id="submit-brdCol-btn">Go!</button>
+                    <div class="recent-color-list">
+                        <div class="r-c-title">Recent Color List</div>
+                        <div class="recent-colors-2"></div>
+                    </div>
+                </form>
+                <form class="form-2-3">
+                    <p class="border-del-title">Add/Del All Borders</p>
+                    <button type="button" class="erase-all-borders-btn">Go!</button>
+                    <span class="border-eraser-tiptext">Click to add.<br>Dbl click to delete.</span>
+                </form>
+                <div class="eraser">
+                    <p class="eraser-title">Eraser</p>
+                    <input type="checkbox" class="eraser-checkbox"><br>
+                    <span class="erasertiptext">Or just single right click to discolor individual cell.</span>
+                </div>
+                <div class="single-border">
+                    <p class="single-brd-title">Add/Del Single Brd</p>
+                    <div class="icons">
+                        <i class="material-icons" id="right-brdr">border_right</i>
+                        <i class="material-icons" id="bottom-brdr">border_bottom</i><br>
+                    </div>
+                    <span class="single-brd-ersr-tiptext">Click to add.<br>Dbl click to delete.</span>
+                </div>
+                <form class="form-2-4">
+                    <p class="reset-canv-st-title">Reset Canvas Style</p>
+                    <button type="reset" id="reset-style-btn">Go!</button>
+                </form>
+                <!--<div id="dialog-confirm" title="Empty the recycle bin?">
+                    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Are you sure you want to reset the canvas style?</p>
+                </div>-->
+            </div>
+        </section>
+        <section class="third-section">
+            <hr>
+            <h2 class="h2">Design Canvas</h2>
+            <table align="center" id="myGrid"></table>
+        </section>
+        <footer class="footer">
+            <p>Made with &hearts; by Chara</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
